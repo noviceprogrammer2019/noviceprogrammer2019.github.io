@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: auto;
+}
+a:hover {
+    text-shadow: 1px 0 3px rgba(91, 91, 91, 0.83);
+}
+
+body{
+    height: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afb8bf;flex-grow: 1;
+
+
+
+
+}
+
+.ProductCard_leftBox {
+    display: flex;
+    background-color : #37b0ae;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 465px;
+    position:relative;
+}
+.logo{
+    position: absolute;
+    left: 27px;
+    top: 36px;
+}
+
+.bigPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 65px;
+    margin:  84px 0 77px;
+    -webkit-filter: drop-shadow(0px 60px 35px #222);
+}
+
+.smallPhoto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 159px);
+    right: -44px;
+
+
+}
+
+.smallPhoto__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 97px;
+    margin: 9px;
+    background: rgba(255,255,255,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.smallPhoto__item:hover{
+    background: rgba(55,176,174,.7);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ProductCard__rightBox{
+    display: flex;
+    background-color: #ffffff;
+    height: 700px;
+    width: 540px;
+}
+.rightBox-padding {
+padding: 78px 0 0 81px;
+}
+
+.rightBox-title {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 2.9%;
+    color: #3a4d5c;
+}
+
+.rightBox-subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #3a4d5c;
+    margin-bottom: 7.2%;
+
+}
+.rightBox-features {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #7c8d9c;
+    margin-bottom: 2.9%;
+
+}
+.rightBox-listFeatures {
+    list-style: none;
+    font-size: 13px;
+    color: #7c8d9c;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 7.1%;
+}
+.rightBox-listFeatures li:before {
+    content: "";
+    list-style: none;
+    display:inline-block;
+    justify-content: center;
+    background-color: #37b0ae;
+    background-image: none;
+    width:5px;
+    height:5px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 2px;
+}
+.rightBox-Links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 236px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #7c8d9c;
+    margin-bottom: 4.3%;
+
+}
+
+.rightBox-quantity {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #7c8d9c;
+    margin-bottom: 1.4%;
+}
+.rightBox-counter{
+    display: flex;
+}
+.rightBox-counter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    border: solid 1px #7c8d9c;
+    border-collapse: collapse;
+    margin-bottom: 4.4%;
+    font-size: 13px;
+    color: #7c8d9c;
+
+}
+
+.rightBox-counter-box:first-child{
+    border-top: solid 1px #7c8d9c;
+    border-left: solid 1px #7c8d9c;
+    border-bottom: solid 1px #7c8d9c;
+    border-right: none;
+    font-size: 18px;
+
+}
+.rightBox-counter-box:last-child {
+    border-top: solid 1px #7c8d9c;
+    border-right: solid 1px #7c8d9c;
+    border-bottom: solid 1px #7c8d9c;
+    border-left: none;
+    font-size: 18px;
+
+}
+.rightBox-counter-box a:hover{
+    background: #37b0ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+
+}
+.rightBox-price{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4.1%;
+
+}
+.rightBox-price-new{
+    font-size: 37px;
+    color: #3a4d5c;
+}
+.rightBox-price-old{
+    font-size: 13px;
+    color: #7c8d9c;
+    margin-left: 14px;
+}
+.ButtonsALL {
+    display: flex;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #7c8d9c;
+    width: 200px;
+    height: 45px;
+    border: 1px solid #7c8d9c;
+}
+.Buttons:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+    width: 200px;
+    height: 45px;
+    background: #37b0ae;
+}
+.Buttons a:hover {
+    text-shadow: none;
+}
+.Wish {
+    margin-left: 20px;
+}
+
+@media (min-width: 0) and (max-width: 1100px){
+    main{
+        flex-direction: column;
+    }
+.bigPhoto{
+    position: static;
+    width: 320px;
+    margin:  84px 0 46px;
+}
+.bigPhoto img{
+    width: 320px;
+}
+.smallPhoto{
+    position: static;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+    .ProductCard_leftBox{
+        width: 540px;
+    }
+}
+
+
